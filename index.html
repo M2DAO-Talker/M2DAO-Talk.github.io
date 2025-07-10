@@ -36,7 +36,7 @@
   <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.1.2/es5/tex-mml-chtml.js">  </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
@@ -52,22 +52,22 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">M2DAO-Talker: Harmonizing Multi-granular Motion Decoupling and Alternating Optimization for Talking-head Generation</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
+              <!-- <span class="author-block"> -->
+                <!-- <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span> -->
+                <!-- <span class="author-block"> -->
+                  <!-- <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span> -->
+                  <!-- <span class="author-block"> -->
+                    <!-- <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a> -->
+                  <!-- </span> -->
+                  <!-- </div> -->
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
+                  <!-- <div class="is-size-5 publication-authors"> -->
+                    <!-- <span class="author-block">Institution Name<br>Conferance name and year</span> -->
+                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+                  <!-- </div> -->
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
@@ -83,7 +83,7 @@
                     </span>
 
                     <!-- Supplementary PDF link -->
-                    <span class="link-block">
+                    <!-- <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
@@ -91,7 +91,7 @@
                       </span>
                       <span>Supplementary</span>
                     </a>
-                  </span>
+                  </span> -->
 
                   <!-- Github link -->
                   <span class="link-block">
@@ -105,7 +105,7 @@
                 </span>
 
                 <!-- ArXiv abstract Link -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -113,7 +113,7 @@
                   </span>
                   <span>arXiv</span>
                 </a>
-              </span>
+              </span> -->
             </div>
           </div>
         </div>
@@ -124,12 +124,12 @@
 
 
 <!-- Teaser video-->
-<section class="hero teaser">
+<!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
+      <video poster="" id="tree" autoplay controls  loop height="100%"> -->
         <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
+        <!-- <source src="static/videos/banner_video.mp4"
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
@@ -137,18 +137,18 @@
       </h2>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
-<section class="section hero is-light">
+<section class="section hero">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
+      <div class="column">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+              Audio-driven talking head generation holds significant potential for film production. While existing 3D methods have advanced motion modeling and content synthesis, they often produce rendering artifacts, such as motion blur, temporal jitter, and local penetration, due to limitations in representing stable, fine-grained motion fields. Through systematic analysis, we reformulate talking head generation into a unified framework comprising three steps: video preprocessing, motion representation, and rendering reconstruction. This framework underpins our proposed M2DAO-Talker, which addresses current limitations via multi-granular motion decoupling and alternating optimization. Specifically, we devise a novel 2D portrait preprocessing pipeline to extract frame-wise deformation control conditions (motion region segmentation masks, and camera parameters) to facilitate motion representation. To ameliorate motion modeling, we elaborate a multi-granular motion decoupling strategy, which independently models non-rigid (oral and facial) and rigid (head) motions for improved reconstruction accuracy. Meanwhile, a motion consistency constraint is developed to ensure head-torso kinematic consistency, thereby mitigating penetration artifacts caused by motion aliasing. In addition, an alternating optimization strategy is designed to iteratively refine facial and oral motion parameters, enabling more realistic video generation. Experiments across multiple datasets show that M2DAO-Talker achieves state-of-the-art performance, with the 2.43 dB PSNR improvement in generation quality and 0.64 gain in user-evaluated video realness versus TalkingGaussian while with 150 FPS inference speed.
           </p>
         </div>
       </div>
@@ -156,37 +156,179 @@
   </div>
 </section>
 <!-- End paper abstract -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered ">
+      <div class="column">
+        <h2 class="title is-3 has-text-centered">Overall Pipeline</h2>
+          <img src="static/images/pipeline.png" alt="MY ALT TEXT"/>
+          <h2 class="content has-text-justified ">
+            The M2DAO-Talker pipeline comprises three stages. i) Video Preprocessing: it extracts key features from input videos, involving portrait image \(I\), mouth movement feature \(a\), semantic mask \(M\), background image \(I_{\text{bg}}\), facial expression feature \(e\), and camera projection parameters. ii) Motion Representation: head motion is categorized into three components: head rotation, facial expressions, and oral movements. Head rotation is parameterized using a scaling matrix \(T\), rotation matrix \(R\), and focal length \(F\), while facial expressions and oral movements are modeled by two separate motion branches bashed on 3D Gaussian primitives. Region-specific supervision is applied to each branch using \(I\odot M\) as a localized training signal, and facial deformations are regularized to maintain coherence with torso motion. iii) Rendering Reconstruction: alternating optimization cyclically updates parameters between the Face Branch and the Inside Mouth Branch, using full portrait \(I\) as ground truth. 
+          </h2>
+      </div>
+    </div>
+  </div>
+</section>
 
 
+
+
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered ">
+      <div class="column">
+        <h2 class="title is-3 has-text-centered">Self-Construction Comparison</h2>
+          <!-- <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/> -->
+           <h2 class="title is-4 ">Comparison with NeRF</h2>
+          <h2 >
+            From left to right, the results are Ground Truth, SyncTalk(CVPR 2024) and Ours. TalkingGaussian(ECCV 2025) and GaussianTalker(ACM MM 2024). The left is ground truth and the right is our method.
+          </h2>
+          <video poster="" id="video1"  controls   height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/May_output_concat_3_audio.mp4"
+            type="video/mp4">
+          </video>
+                    <video poster="" id="video1"  controls   height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/Obama_output_concat_3_audio.mp4"
+            type="video/mp4">
+          </video>
+                    <video poster="" id="video1"  controls   height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/Lieu_output_concat_3_audio.mp4"
+            type="video/mp4">
+          </video>
+                    <video poster="" id="video1"  controls   height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/Shaheen_output_concat_3_audio.mp4"
+            type="video/mp4">
+          </video>
+                    <video poster="" id="video1"  controls   height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/Jae-in_output_concat_3_audio.mp4"
+            type="video/mp4">
+          </video>
+                    <!-- <video poster="" id="video1"  controls   height="100%"> -->
+            <!-- Your video file here -->
+            <!-- <source src="static/videos/Obama1_output_concat_3_audio.mp4"
+            type="video/mp4">
+          </video>
+                    <video poster="" id="video1"  controls   height="100%"> -->
+            <!-- Your video file here -->
+            <!-- <source src="static/videos/Obama2_output_concat_3_audio.mp4"
+            type="video/mp4">
+          </video> -->
+          <h2 class="title is-4 ">Comparison with 3DGS</h2>
+          <h2 >
+            From left to right, the results are Ground Truth, GaussianTalker(ACM MM 2024),  TalkingGaussian(ECCV 2025) and Ours.
+          </h2>
+          <video poster="" id="video1"  controls   height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/May_output_concat_4_audio.mp4"
+            type="video/mp4">
+          </video>
+                    <video poster="" id="video1"  controls   height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/Obama_output_concat_4_audio.mp4"
+            type="video/mp4">
+          </video>
+                    <video poster="" id="video1"  controls   height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/Lieu_output_concat_4_audio.mp4"
+            type="video/mp4">
+          </video>
+                    <video poster="" id="video1"  controls   height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/Shaheen_output_concat_4_audio.mp4"
+            type="video/mp4">
+          </video>
+                    <video poster="" id="video1"  controls   height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/Jae-in_output_concat_4_audio.mp4"
+            type="video/mp4">
+          </video>
+                    <!-- <video poster="" id="video1"  controls   height="100%"> -->
+            <!-- Your video file here -->
+            <!-- <source src="static/videos/Obama1_output_concat_4_audio.mp4"
+            type="video/mp4">
+          </video>
+                    <video poster="" id="video1"  controls   height="100%"> -->
+            <!-- Your video file here -->
+            <!-- <source src="static/videos/Obama2_output_concat_4_audio.mp4"
+            type="video/mp4">
+          </video> -->
+        <!-- <video src="https://dr.cdnux.com/aiialab/i/2025/01/04/Obama_RAD_out.mp4" preload="auto"  playsinline></video>
+        <video src="https://dr.cdnux.com/aiialab/i/2025/01/04/Obama_ER_out.mp4" preload="auto"  playsinline></video>
+        <video src="https://dr.cdnux.com/aiialab/i/2025/01/04/Obama_SyncTalk_out.mp4" preload="auto"  playsinline></video> -->
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered ">
+      <div class="column">
+        <h2 class="title is-3 has-text-centered">Lip-Synchronization Comparison</h2>
+          <!-- <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/> -->
+           <h2 class="title is-4 ">Comparison with 3D</h2>
+          <h2 >
+            From left to right, the results are SyncTalk(CVPR 2024), GaussianTalker(ACM MM 2024),  TalkingGaussian(ECCV 2025) and Ours.
+          </h2>
+          <video poster="" id="video1"  controls   height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/Lieu_May_output_concat_4_audio.mp4"
+            type="video/mp4">
+          </video>
+                    <!-- <video poster="" id="video1"  controls   height="100%"> -->
+            <!-- Your video file here -->
+            <!-- <source src="static/videos/Lieu_Obama_output_concat_4_audio.mp4"
+            type="video/mp4">
+          </video> -->
+                    <video poster="" id="video1"  controls   height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/Shaheen_May_output_concat_4_audio.mp4"
+            type="video/mp4">
+          </video>
+                    <!-- <video poster="" id="video1"  controls   height="100%"> -->
+            <!-- Your video file here -->
+            <!-- <source src="static/videos/Shaheen_Obama_output_concat_4_audio.mp4"
+            type="video/mp4">
+          </video> -->
+      </div>
+    </div>
+  </div>
+</section>
 <!-- Image carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
+       <div class="item"> -->
         <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <!-- <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           First image description.
         </h2>
       </div>
-      <div class="item">
+      <div class="item"> -->
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <!-- <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           Second image description.
         </h2>
       </div>
-      <div class="item">
+      <div class="item"> -->
         <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <!-- <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
          Third image description.
        </h2>
      </div>
-     <div class="item">
+     <div class="item"> -->
       <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <!-- <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
         Fourth image description.
       </h2>
@@ -194,64 +336,64 @@
   </div>
 </div>
 </div>
-</section>
+</section> -->
 <!-- End image carousel -->
 
 
 
 
 <!-- Youtube video -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
+
+  <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
           <div class="publication-video">
-            <!-- Youtube embed code here -->
+
             <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
-<!-- End youtube video -->
+</section> 
+ End youtube video -->
 
 
 <!-- Video carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Another Carousel</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
+          <video poster="" id="video1" autoplay controls  loop height="100%">
             <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
+            <!-- <source src="static/videos/carousel1.mp4"
             type="video/mp4">
           </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
+        </div> -->
+        <!-- <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls  loop height="100%">
             <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
+            <!-- <source src="static/videos/carousel2.mp4"
             type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+          </video> -->
+        <!-- </div> --> -->
+        <!-- <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls  loop height="100%">\ -->
             <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
+            <!-- <source src="static/videos/carousel3.mp4"
             type="video/mp4">
           </video>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> --> -->
 <!-- End video carousel -->
 
 
@@ -260,7 +402,7 @@
 
 
 <!-- Paper poster -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
@@ -270,20 +412,20 @@
         
       </div>
     </div>
-  </section>
+  </section> -->
 <!--End paper poster -->
 
 
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
+  <!-- <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>BibTex Code Here</code></pre>
     </div>
-</section>
+</section> -->
 <!--End BibTex citation -->
 
-
+<!-- 
   <footer class="footer">
   <div class="container">
     <div class="columns is-centered">
@@ -300,7 +442,7 @@
       </div>
     </div>
   </div>
-</footer>
+</footer> -->
 
 <!-- Statcounter tracking code -->
   
